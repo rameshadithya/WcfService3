@@ -43,19 +43,7 @@ namespace WcfService3
 
         
 
-        /*public DataSet SearchPlayerDetails(PlayerDetails PlayerInfo)
-        {
-            SqlConnection con = new SqlConnection("server=LAPTOP-LDB7QIVH;database=test;Integrated Security=true");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("select * from PLAYER where PLRNO=@plrno", con);
-            cmd.Parameters.AddWithValue("@PLRNO", PlayerInfo.pno);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            return ds;
-        }*/
+        
         public string InsertDetails(PlayerDetails p)
         {
             string Message;
